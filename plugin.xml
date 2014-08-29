@@ -4,4 +4,13 @@
     <js-module name="CheckIntent" src="www/CheckIntent.js">
         <clobbers target="cordova.plugins.CheckIntent" />
     </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CheckIntent">
+                <param name="android-package" value="uk.ac.edina.mobile.checkintent.CheckIntent"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CheckIntent.java" target-dir="src/uk/ac/edina/mobile/checkintent/" />
+    </platform>
 </plugin>
