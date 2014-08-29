@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="uk.ac.edina.mobile.checkintent" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>CheckIntent</name>
-    <js-module name="CheckIntent" src="www/CheckIntent.js">
-        <clobbers target="cordova.plugins.CheckIntent" />
+<plugin id="uk.ac.edina.mobile.activitieslist" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ActivitiesList</name>
+    <js-module name="ActivitiesList" src="www/ActivitiesList.js">
+        <clobbers target="cordova.plugins.ActivitiesList" />
     </js-module>
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="CheckIntent">
-                <param name="android-package" value="uk.ac.edina.mobile.checkintent.CheckIntent"/>
+            <feature name="ActivitiesList">
+                <param name="android-package" value="uk.ac.edina.mobile.activitieslist.ActivitiesList"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/CheckIntent.java" target-dir="src/uk/ac/edina/mobile/checkintent/" />
+        <source-file src="src/android/ActivitiesList.java" target-dir="src/uk/ac/edina/mobile/activitieslist/" />
     </platform>
 </plugin>

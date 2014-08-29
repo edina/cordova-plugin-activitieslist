@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.checkIntent = function(str, success, error) {
-    exec(success, error, "CheckIntent", "check", [str]);
+exports.byIntent = function(intentString, success, error) {
+    exec(success, error, "ActivitiesList", "byIntent", [intentString]);
 };
